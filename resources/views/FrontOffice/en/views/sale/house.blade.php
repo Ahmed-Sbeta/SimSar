@@ -405,6 +405,7 @@
               <!-- End Quill -->
             </div>
             <!-- End Form -->
+            
 
             <h4 class="my-7">Payment Process</h4>
 
@@ -596,5 +597,24 @@
     <!-- End Form -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
+@endsection
 
-  @endsection
+@section('js')
+    var node = document.getElementById('editor');
+      var options = {
+        modules: {
+          toolbar: [
+              [{ 'header': [1, 2, 3, false] }],
+              ["bold", "italic", "underline", "strike", "link", "image", "blockquote", "code", {"list": "bullet"}],
+              [{"direction":"rtl"}],
+              [{ 'align': 'right' }],
+          ]
+        },
+        placeholder: 'describe your listing...',
+        theme: 'snow'
+      };
+      var editor = new Quill(node, options);
+    
+      editor.format('direction', 'ltr');
+      editor.format('align', 'left');
+@endsection

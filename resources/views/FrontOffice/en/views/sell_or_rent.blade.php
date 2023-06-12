@@ -4,8 +4,6 @@
 
 @include('FrontOffice.en.sections.header')
 
-  
-
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Gallery -->

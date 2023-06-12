@@ -15,7 +15,7 @@ class PasswordResetLinkController extends Controller
      */
     public function create(): View
     {
-        return view('auth.forgot-password');
+        return view('FrontOffice.en.views.auth.forgot-password');
     }
 
     /**
